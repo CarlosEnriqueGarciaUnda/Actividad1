@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 - Programación Web</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #1e293b;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #0f172a;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .numero {
+            font-size: 22px;
+            margin-bottom: 4px;
+        }
+
+        .titulo {
+            font-size: 14px;
+        }
+
+        /* Colores limpios para cada tarjeta */
+        .card-1 { background-color: #e11d48; }
+        .card-2 { background-color: #ea580c; }
+        .card-3 { background-color: #d97706; }
+        .card-4 { background-color: #059669; }
+        .card-5 { background-color: #0891b2; }
+        .card-6 { background-color: #2563eb; }
+        .card-7 { background-color: #4f46e5; }
+        .card-8 { background-color: #7c3aed; }
+        .card-9 { background-color: #db2777; }
+        .card-10 { background-color: #0d9488; }
+    </style>
+</head>
+<body>
+
+    <h1>Menú de Ejercicios - Actividad 1</h1>
+
+    <div class="grid-container">
+        <a href="ejercicio1.html" class="card card-1">
+            <span class="numero">01</span>
+            <span class="titulo">Ejercicio 1</span>
+        </a>
+
+        <a href="ejercicio2.html" class="card card-2">
+            <span class="numero">02</span>
+            <span class="titulo">Ejercicio 2</span>
+        </a>
+
+        <a href="ejercicio3.html" class="card card-3">
+            <span class="numero">03</span>
+            <span class="titulo">Ejercicio 3</span>
+        </a>
+
+        <a href="ejercicio4.html" class="card card-4">
+            <span class="numero">04</span>
+            <span class="titulo">Ejercicio 4</span>
+        </a>
+
+        <a href="ejercicio5.html" class="card card-5">
+            <span class="numero">05</span>
+            <span class="titulo">Ejercicio 5</span>
+        </a>
+
+        <a href="ejercicio6.html" class="card card-6">
+            <span class="numero">06</span>
+            <span class="titulo">Ejercicio 6</span>
+        </a>
+
+        <a href="ejercicio7.html" class="card card-7">
+            <span class="numero">07</span>
+            <span class="titulo">Ejercicio 7</span>
+        </a>
+
+        <a href="ejercicio8.html" class="card card-8">
+            <span class="numero">08</span>
+            <span class="titulo">Ejercicio 8</span>
+        </a>
+
+        <a href="ejercicio9.html" class="card card-9">
+            <span class="numero">09</span>
+            <span class="titulo">Ejercicio 9</span>
+        </a>
+
+        <a href="ejercicio10.html" class="card card-10">
+            <span class="numero">10</span>
+            <span class="titulo">Ejercicio 10</span>
+        </a>
+    </div>
+
+</body>
+</html>
