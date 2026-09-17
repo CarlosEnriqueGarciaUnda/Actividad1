@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,10 +30,10 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
             width: 100%;
-            max-width: 900px;
+            max-width: 1000px;
         }
 
         .card {
@@ -41,13 +41,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100px;
+            height: 95px;
             border-radius: 8px;
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .card:hover {
@@ -56,15 +56,15 @@
         }
 
         .numero {
-            font-size: 22px;
-            margin-bottom: 4px;
+            font-size: 20px;
+            margin-bottom: 2px;
         }
 
         .titulo {
-            font-size: 14px;
+            font-size: 13px;
         }
 
-        /* Colores limpios para cada tarjeta */
+        /* Colores sutiles por bloque de ejercicios */
         .card-1 { background-color: #e11d48; }
         .card-2 { background-color: #ea580c; }
         .card-3 { background-color: #d97706; }
@@ -75,6 +75,14 @@
         .card-8 { background-color: #7c3aed; }
         .card-9 { background-color: #db2777; }
         .card-10 { background-color: #0d9488; }
+        .card-11 { background-color: #0284c7; }
+        .card-12 { background-color: #16a34a; }
+        .card-13 { background-color: #9333ea; }
+        .card-14 { background-color: #c026d3; }
+        .card-15 { background-color: #e11d48; }
+        .card-16 { background-color: #0284c7; }
+        .card-17 { background-color: #4f46e5; }
+        .card-18 { background-color: #059669; }
     </style>
 </head>
 <body>
@@ -82,55 +90,24 @@
     <h1>Menú de Ejercicios - Actividad 1</h1>
 
     <div class="grid-container">
-        <a href="ejercicio1.html" class="card card-1">
-            <span class="numero">01</span>
-            <span class="titulo">Ejercicio 1</span>
-        </a>
-
-        <a href="ejercicio2.html" class="card card-2">
-            <span class="numero">02</span>
-            <span class="titulo">Ejercicio 2</span>
-        </a>
-
-        <a href="ejercicio3.html" class="card card-3">
-            <span class="numero">03</span>
-            <span class="titulo">Ejercicio 3</span>
-        </a>
-
-        <a href="ejercicio4.html" class="card card-4">
-            <span class="numero">04</span>
-            <span class="titulo">Ejercicio 4</span>
-        </a>
-
-        <a href="ejercicio5.html" class="card card-5">
-            <span class="numero">05</span>
-            <span class="titulo">Ejercicio 5</span>
-        </a>
-
-        <a href="ejercicio6.html" class="card card-6">
-            <span class="numero">06</span>
-            <span class="titulo">Ejercicio 6</span>
-        </a>
-
-        <a href="ejercicio7.html" class="card card-7">
-            <span class="numero">07</span>
-            <span class="titulo">Ejercicio 7</span>
-        </a>
-
-        <a href="ejercicio8.html" class="card card-8">
-            <span class="numero">08</span>
-            <span class="titulo">Ejercicio 8</span>
-        </a>
-
-        <a href="ejercicio9.html" class="card card-9">
-            <span class="numero">09</span>
-            <span class="titulo">Ejercicio 9</span>
-        </a>
-
-        <a href="ejercicio10.html" class="card card-10">
-            <span class="numero">10</span>
-            <span class="titulo">Ejercicio 10</span>
-        </a>
+        <a href="ejercicio1.html" class="card card-1"><span class="numero">01</span><span class="titulo">Ejercicio 1</span></a>
+        <a href="ejercicio2.html" class="card card-2"><span class="numero">02</span><span class="titulo">Ejercicio 2</span></a>
+        <a href="ejercicio3.html" class="card card-3"><span class="numero">03</span><span class="titulo">Ejercicio 3</span></a>
+        <a href="ejercicio4.html" class="card card-4"><span class="numero">04</span><span class="titulo">Ejercicio 4</span></a>
+        <a href="ejercicio5.html" class="card card-5"><span class="numero">05</span><span class="titulo">Ejercicio 5</span></a>
+        <a href="ejercicio6.html" class="card card-6"><span class="numero">06</span><span class="titulo">Ejercicio 6</span></a>
+        <a href="ejercicio7.html" class="card card-7"><span class="numero">07</span><span class="titulo">Ejercicio 7</span></a>
+        <a href="ejercicio8.html" class="card card-8"><span class="numero">08</span><span class="titulo">Ejercicio 8</span></a>
+        <a href="ejercicio9.html" class="card card-9"><span class="numero">09</span><span class="titulo">Ejercicio 9</span></a>
+        <a href="ejercicio10.html" class="card card-10"><span class="numero">10</span><span class="titulo">Ejercicio 10</span></a>
+        <a href="ejercicio11.html" class="card card-11"><span class="numero">11</span><span class="titulo">Ejercicio 11</span></a>
+        <a href="ejercicio12.html" class="card card-12"><span class="numero">12</span><span class="titulo">Ejercicio 12</span></a>
+        <a href="ejercicio13.html" class="card card-13"><span class="numero">13</span><span class="titulo">Ejercicio 13</span></a>
+        <a href="ejercicio14.html" class="card card-14"><span class="numero">14</span><span class="titulo">Ejercicio 14</span></a>
+        <a href="ejercicio15.html" class="card card-15"><span class="numero">15</span><span class="titulo">Ejercicio 15</span></a>
+        <a href="ejercicio16.html" class="card card-16"><span class="numero">16</span><span class="titulo">Ejercicio 16</span></a>
+        <a href="ejercicio17.html" class="card card-17"><span class="numero">17</span><span class="titulo">Ejercicio 17</span></a>
+        <a href="ejercicio18.html" class="card card-18"><span class="numero">18</span><span class="titulo">Ejercicio 18</span></a>
     </div>
 
 </body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #ffffff; 
+            padding: 40px 20px; 
+            color: #333333;
+        }
+        .contenedor { 
+            background: #ffffff; 
+            padding: 30px; 
+            max-width: 360px; 
+            margin: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            border: 1px solid #e2e8f0;
+        }
+        h2 { color: #0284c7; margin-top: 0; text-align: center; }
+        label { font-size: 14px; color: #475569; font-weight: bold; display: block; margin-top: 10px; }
+        
+        input { 
+            width: 100%; 
+            padding: 10px; 
+            margin-top: 6px;
+            margin-bottom: 12px; 
+            box-sizing: border-box; 
+            border-radius: 6px; 
+            border: 1px solid #cbd5e1; 
+            font-size: 14px;
+        }
+        input:focus { border-color: #0284c7; outline: none; }
+        
+        button.btn-agregar { 
+            width: 100%; 
+            padding: 11px; 
+            background-color: #0284c7; 
+            color: white; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            font-size: 15px;
+        }
+        button.btn-agregar:hover { background-color: #0369a1; }
+
+        ul { list-style: none; padding: 0; margin-top: 20px; }
+        li { 
+            background: #f1f5f9; 
+            padding: 10px 12px; 
+            margin-bottom: 8px; 
+            border-radius: 6px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border: 1px solid #cbd5e1;
+        }
+        .btn-eliminar {
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .btn-eliminar:hover { background-color: #dc2626; }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Gestor de Tareas</h2>
+        
+        <label for="nuevaTarea">Nueva Tarea:</label>
+        <input type="text" id="nuevaTarea" placeholder="Ej: Estudiar JavaScript">
+        <button class="btn-agregar" id="btnAgregar">Agregar Tarea</button>
+
+        <ul id="listaTareas"></ul>
+    </div>
+
+    <script src="js/ejercicio17.js"></script>
+</body>
+</html>

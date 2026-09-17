@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con Funciones Flecha</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #ffffff; 
+            padding: 40px 20px; 
+            color: #333333;
+        }
+        
+        .calculadora { 
+            background: #ffffff; 
+            padding: 30px; 
+            max-width: 340px; 
+            margin: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            border: 1px solid #e2e8f0;
+        }
+        
+        h2 {
+            color: #0284c7;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        label {
+            font-size: 14px;
+            color: #475569;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        input { 
+            width: 100%; 
+            padding: 10px; 
+            margin-top: 6px;
+            margin-bottom: 12px; 
+            box-sizing: border-box; 
+            border-radius: 6px; 
+            border: 1px solid #cbd5e1; 
+            background-color: #ffffff;
+            color: #0f172a;
+            font-size: 14px;
+        }
+        input:focus {
+            border-color: #0284c7;
+            outline: none;
+        }
+
+        .grid-botones {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        
+        button { 
+            padding: 11px; 
+            background-color: #0284c7; 
+            color: white; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            font-size: 15px;
+            transition: background-color 0.2s; 
+        }
+        button:hover { 
+            background-color: #0369a1; 
+        }
+        
+        .readonly-input { 
+            background-color: #f1f5f9; 
+            color: #0f172a;
+            font-weight: bold;
+            cursor: not-allowed;
+            border-color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Calculadora (Arrow Functions)</h2>
+        
+        <label for="numero1">Numero 1:</label>
+        <input type="text" id="numero1" placeholder="Ej: 15">
+
+        <label for="numero2">Número 2:</label>
+        <input type="text" id="numero2" placeholder="Ej: 5">
+
+        <div class="grid-botones">
+            <button onclick="calcularOperacion('suma')">Sumar</button>
+            <button onclick="calcularOperacion('resta')">Restar</button>
+            <button onclick="calcularOperacion('multiplicacion')">Multiplicar</button>
+            <button onclick="calcularOperacion('division')">Dividir</button>
+        </div>
+
+        <label for="resultado">Resultado:</label>
+        <input type="text" id="resultado" class="readonly-input" readonly placeholder="El resultado aparecerá aquí">
+    </div>
+
+    <script src="js/ejercicio16.js"></script>
+</body>
+</html>

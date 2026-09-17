@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes y Calificaciones</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #ffffff; 
+            padding: 40px 20px; 
+            color: #333333;
+        }
+        
+        .calculadora { 
+            background: #ffffff; 
+            padding: 30px; 
+            max-width: 380px; 
+            margin: auto; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            border: 1px solid #e2e8f0;
+        }
+        
+        h2 {
+            color: #0284c7;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        label {
+            font-size: 14px;
+            color: #475569;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        input, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            margin-top: 6px;
+            margin-bottom: 10px; 
+            box-sizing: border-box; 
+            border-radius: 6px; 
+            border: 1px solid #cbd5e1; 
+            background-color: #ffffff;
+            color: #0f172a;
+            font-size: 14px;
+        }
+        input:focus, textarea:focus {
+            border-color: #0284c7;
+            outline: none;
+        }
+        
+        button { 
+            width: 100%; 
+            padding: 11px; 
+            background-color: #0284c7; 
+            color: white; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            transition: background-color 0.2s; 
+        }
+        button:hover { 
+            background-color: #0369a1; 
+        }
+        
+        .readonly-input { 
+            background-color: #f1f5f9; 
+            color: #0f172a;
+            font-weight: bold;
+            cursor: not-allowed;
+            border-color: #cbd5e1;
+        }
+
+        .instruccion {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Registro de estudiantes</h2>
+        
+        <label for="datosInput">Estudiantes y Calificaciones:</label>
+        <div class="instruccion">Formato por línea: Nombre, Calificación (Ej: Juan, 85)</div>
+        <textarea id="datosInput" rows="5" placeholder="Juan, 85&#10;Ana, 92&#10;Luis, 78"></textarea>
+
+        <button id="btnProcesar">Procesar Datos</button>
+
+        <label for="promedio">Calificación Promedio:</label>
+        <input type="text" id="promedio" class="readonly-input" readonly placeholder="El promedio aparecerá aquí">
+
+        <label for="estudianteMayor">Mejor Estudiante (Mas Alta):</label>
+        <input type="text" id="estudianteMayor" class="readonly-input" readonly placeholder="Nombre y nota más alta">
+
+        <label for="estudianteMenor">Peor Estudiante (Mas Baja):</label>
+        <input type="text" id="estudianteMenor" class="readonly-input" readonly placeholder="Nombre y nota más baja">
+    </div>
+
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

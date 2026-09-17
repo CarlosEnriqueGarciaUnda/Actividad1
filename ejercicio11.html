@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de kilometros a millas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            padding: 50px;
+            color: #333333;
+        }
+
+        .calculadora{
+            background: #ffffff;
+            padding: 30px;
+            max-width: 300px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgb(0, 0, 0,0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        h2{
+            color: #0284c7;
+            margin-top: 0;
+            text-align: center;
+        }
+
+        label{
+            font-size: 14px;
+            color: #475569;
+            font-weight: bold;
+        }
+
+        input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            border: 1px solid #cbd5e1;
+            background-color: #ffffff;
+            color: #0f172a;
+            font-size: 14px;
+        }
+
+        inout:focus{
+            border-color: #0f172a;
+            outline: none;
+        }
+
+        button{
+            width: 100%;
+            padding: 11px;
+            background-color: #0284c7;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            transition:background-color 0.2s;
+        }
+
+        button:hover{
+            background-color: #0369a1;
+        }
+
+        .readonly-input{
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: bold;
+            cursor: not-allowed;
+            border-color: #cbd5e1;
+        }
+    </style>
+</head>
+<body>
+    <div class= "mi calculadora">
+        <h2>Km a millas</h2>
+        <label for="kilometros"> Distancia en kilometros</label>
+        <input type="numer" id="kilometros" placeholder="Ej. 10" step="any">
+
+        <button id="btndeconvertir"> Convertir </button>
+        <label for="millas" style="margin-top: 15px; display: block;"> Resultado en millas</label>
+        <input type="text" id="millas" class="readonly-input" readonly placeholder="El resultado aparecera aqui: ">
+    </div>
+
+    <script src="js/ejercicio11.js"> </script>
+</body>
+</html>
